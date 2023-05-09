@@ -378,4 +378,91 @@ nav i{
 }
 
 /* end footer */
+/* start contact */
 
+.contact h1{
+  box-shadow: 0 0 15px -4px;
+  width: 72%;
+  text-align: center;
+  color: black;
+  font-size: 37px;
+  background-color: transparent;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 10px;
+  border-color: yellow black #6df98c aquamarine;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  transition: 1s;
+}
+.container{
+  display:grid;
+  grid-template-areas: 
+          "work work work work"
+          "mail mail phone phone"
+          "whatsapp whatsapp facebook facebook"
+          "instagram instagram youtube youtube";
+row-gap: 25px;
+column-gap:25px;
+width:75%;
+}
+.work{grid-area: work; }
+.email{grid-area: mail; }
+.phone{grid-area: phone; }
+.whatsapp{grid-area: whatsapp; }
+.facebook{grid-area: facebook; }
+.instagram{grid-area: instagram; }
+.youtube{grid-area: youtube; }
+
+.work{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first-color);
+  border-radius: 18px;
+  text-align: center;
+}
+.email,
+.phone,
+.whatsapp,
+.facebook,
+.instagram,
+.youtube{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first-color);
+  border-radius: 18px;
+  padding: 35px 0px;
+  text-align: center;
+  text-decoration:none;
+}
+.container i{
+  font-size: 35px;
+  color: #033838;
+}
+.container h3{
+  font-size: 20px;
+  color: white;
+}
+@media (max-width:767px){
+  .container{
+    row-gap: 25px;
+    column-gap: 14px;
+    width:100%;
+  }
+  .work{
+    padding:10px 54px;
+  }
+}
+.contact a{
+  transition:0.5s;
+}
+.contact a:hover{
+  box-shadow: 0 0 30px -3px var(--first-color);
+}
+/* end contact */
