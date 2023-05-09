@@ -214,6 +214,69 @@ nav i{
   color:rgb(0, 0, 0);
 }
 /* end social */
+
+/* start night-page */
+.btn{
+  width: 75px;
+  height: 30px;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  left: 20px;
+  justify-content: space-around;
+}
+
+.btn i.active{
+background-color: yellow;
+color:var(--first-color);
+
+}
+.btn .morning{
+color:yellow;
+background-color: var(--first-color);
+padding: 5px 10px 5px 7px;
+border-right-width: 20px;
+border-radius: 0 15px 15px 0;
+position: absolute;
+right: 0;
+
+}
+.btn i{
+font-size:17;
+}
+.btn .night{
+padding: 5px 10px 5px 7px;
+border-right-width: 20px;
+border-radius: 15px 0 0 15px;
+position: absolute;
+left: 0;
+background-color: var(--first-color);
+color:white;
+}
+.night-page{
+background-color:var(--first-color);
+}
+.night-page .contact h1{
+color:white;
+}
+.night-page .work{
+background-color:white;
+}
+.night-page .work h3{
+color:var(--first-color);
+}
+.night-page .contact a{
+background-color: white;
+color:var(--first-color);
+}
+.night-page .contact a h3{
+color:var(--first-color);
+}
+.night-page .footer{
+background-color: white;
+}
+/* end night-page */
 /* start he-courses */
 .he-courses{
   display: flex;
